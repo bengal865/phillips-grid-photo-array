@@ -1,0 +1,25 @@
+/* Abraham Lincoln */
+/* 01 SEP 2021 */
+/* Phillips: CSS Grid Photo Array */
+
+/* Source: https://youtu.be/Pip8s2BpelM */
+
+#photo-array{
+  display: grid;  
+  grid-template-areas: 
+    "photo1 photo2 photo3"
+    "photo1 photo4 photo5";
+  grid-template-columns: 1fr 20% 20%;
+  gap: 0.5em;
+  margin: 0.7rem;
+}
+
+#photo-array > div {
+  border: 2px solid rgb(59, 82, 209);
+  border-radius: 2px;
+}
+
+#photo-array > div:first-child{
+  grid-area: photo1;
+  height: 450px;
+}
